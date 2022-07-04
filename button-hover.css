@@ -1,0 +1,399 @@
+*{margin: 0px;padding: 0px;box-sizing: border-box;font-family: arial;}
+body{padding: 40px;}
+.container{max-width: 1140px;margin: 0 auto;}
+
+h3{
+	color: orange;
+	font-weight: bold;
+}
+
+/*.brand-gallery ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}*/
+/*..........buttons css.......*/
+.buttons,.buttons-1,.buttons-2,.buttons-3,.buttons-5,
+.buttons-6,.buttons-7,.buttons-8{
+	width: auto;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.buttons a,.buttons-1 a,.buttons-2 a,.buttons-3 a,
+.buttons-5 a,.buttons-6 a,.buttons-7 a,.buttons-8 a{
+	overflow: hidden;
+	position: relative;
+	text-decoration: none;
+	color: white;
+	margin: 20px;
+	padding: 10px 20px;
+	background: green;
+	border: 2px solid pink;
+	z-index: 1;
+}
+.buttons a::before{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	content: "";
+	z-index: -1;
+	background: lightgreen;
+	transition: .5s;
+}
+.buttons a:hover,.buttons-1 a:hover{
+	color: hotpink;
+}
+.buttons .btn1::before{
+	height: 100%;
+	width: 0%;
+}
+.buttons .btn1:hover::before{
+   width: 100%; 
+}
+.buttons .btn2::before{
+	height: 0%;
+	width: 101%;
+}
+.buttons .btn2:hover::before{
+   height: 100%;  
+}
+.buttons .btn3::before{
+	height: 0%;
+	width: 100%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.buttons .btn3:hover::before{
+   height: 310%;  
+}
+.buttons .btn4::before{
+	height: 0%;
+	width: 0%;
+}
+.buttons .btn4:hover::before{
+   height: 100%;
+   width: 101%; 
+}
+
+ 
+ /*..........buttons-1 css.......*/
+.buttons-1 a::before,.buttons-2 a::before{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	content: "";
+	z-index: -1;
+	background: lightgreen;
+	transition: .5s;
+}
+.buttons-1 .btn1::before{
+	height: 100%;
+	width: 0%;
+}
+.buttons-1 .btn1:hover::before{
+   width: 100%;
+}
+.buttons-1 .btn2::before{
+	height: 100%;
+	width: 100%;
+	top: 100%;
+}
+.buttons-1 .btn2:hover::before{
+   top: 0%;
+}
+.buttons-1 .btn3::before{
+	height: 100%;
+	width: 100%;
+	transform: translate(-100%,100%);
+}
+.buttons-1 .btn3:hover::before{
+    transform: translate(0%,0%);
+}
+.buttons-1 .btn4::before{
+	height: 100%;
+	width: 100%;
+	left: 100%;
+}
+.buttons-1 .btn4:hover::before{
+   left: 0%;
+}
+
+
+/*..........buttons-2 css.......*/
+.buttons-2 a{
+	border-radius: 50px;
+}
+.buttons-2 a:hover{
+  
+}
+.buttons-2 a::before{
+	 background-image: linear-gradient(to right, red, yellow); 
+}
+.buttons-2 .btn1::before{
+	height: 100%;
+	width: 0%;
+}
+.buttons-2 .btn1:hover::before{
+   width: 100%;
+}
+.buttons-2 .btn2::before{
+	height: 100%;
+	width: 100%;
+	top: 100%;
+}
+.buttons-2 .btn2:hover::before{
+   top: 0%;
+}
+.buttons-2 .btn3::before{
+	height: 100%;
+	width: 100%;
+	transform: translate(-100%,100%);
+}
+.buttons-2 .btn3:hover::before{
+    transform: translate(0%,0%);
+}
+.buttons-2 .btn4::before{
+	height: 100%;
+	width: 100%;
+	left: 100%;
+}
+.buttons-2 .btn4:hover::before{
+   left: 0%;
+}
+
+/*..........buttons-3 css.......*/
+.buttons-3 a,.buttons-5 a{
+	background: none;
+	color: hotpink;
+	border: none;
+}
+.buttons-3 .btn1::before{
+	position: absolute;
+	content: "";
+	z-index: -1;
+	transition: .5s;
+	border-bottom: 2px solid hotpink;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.buttons-3 .btn1:hover::before{
+   width: 70%; 
+}
+.buttons-3 .btn2::before{
+	position: absolute;
+	content: "";
+	z-index: -1;
+	transition: .5s;
+	border-bottom: 2px solid hotpink;
+    width: 0;
+    bottom: 0;
+    left: 15%;
+}
+.buttons-3 .btn2:hover::before{
+   width: 70%; 
+}
+.buttons-3 .btn2:hover{
+  background: -webkit-linear-gradient(yellow, green);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ } 
+ .buttons-3 .btn3::before{
+	position: absolute;
+	content: "";
+	z-index: -1;
+	transition: .5s;
+	border-bottom: 2px solid hotpink;
+    width: 0;
+    bottom: 0;
+    right: 15%;
+    margin: 0 auto;
+}
+ .buttons-3 .btn3::after{
+	position: absolute;
+	content: "";
+	z-index: -1;
+	transition: .5s;
+	border-bottom: 2px solid hotpink;
+    width: 0;
+    bottom: 0;
+    left: 15%;
+}
+.buttons-3 .btn3:hover::before,
+.buttons-3 .btn3:hover::after{
+   width: 50%; 
+}
+.buttons-3 .btn4::before{
+	position: absolute;
+	content: "";
+	z-index: -1;
+	transition: .5s;
+	border-right: 2px solid hotpink;
+	border-left: 2px solid hotpink;
+    bottom: 0;
+    right: 0;
+    height:0;
+    left: 0;
+}
+.buttons-3 .btn4:hover::before{
+	height: 100%;
+}
+
+
+/*..........buttons-5 css.......*/
+.buttons-5 .btn1::before{
+	position: absolute;
+	content: "";
+	z-index: -1;
+	transition: .5s;
+	border-bottom: 2px solid hotpink;
+	border-top: 2px solid hotpink;
+    width: 0;
+    bottom: 0;
+    top: 0;
+    left: 15%;
+}
+.buttons-5 .btn1:hover::before{
+   width: 70%; 
+}
+.buttons-5 .btn2::before{
+	position: absolute;
+	content: "";
+	z-index: -1;
+	transition: 1s;
+	right: 15%;
+	left: 15%;
+    width: 70%;
+    height: 0px;
+    top: 50%;
+}
+.buttons-5 .btn2:hover::before{
+   top: 100%;
+   border-top: 4px solid hotpink;
+}
+ .buttons-5 .btn3::before{
+	position: absolute;
+	content: "";
+	z-index: -1;
+	transition: 1s;
+    top: 0;
+    height: 100%;
+    left: 50%;
+}
+ .buttons-5 .btn3::after{
+	position: absolute;
+	content: "";
+	z-index: -1;
+	transition: 1s;
+    top: 0;
+    height: 100%;
+    right: 50%;
+}
+.buttons-5 .btn3:hover::before{
+   left: 0; 
+   border-left: 2px solid hotpink;
+}
+.buttons-5 .btn3:hover::after{
+	right: 0;
+	border-right: 2px solid hotpink;
+}
+.buttons-5 .btn4::before{
+	position: absolute;
+	content: "";
+	z-index: -1;
+	transition: .5s;
+	border-bottom: 2px solid hotpink;
+	border-left: 2px solid hotpink;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    height: 0;
+}
+.buttons-5 .btn4:hover::before{
+   width: 100%; 
+   height: 100%;
+}
+
+/*..........buttons-6 css.......*/
+.buttons-6 .btn1:hover{
+   background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+   animation:slidebg1 10s linear infinite;
+}
+@keyframes slidebg1 {
+  to {
+    background-position:100vw;
+  }
+}
+.buttons-6 .btn2:hover{
+   background-image: linear-gradient(70deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+   animation:slidebg2 8s linear infinite;
+
+}
+@keyframes slidebg2 {
+  to {
+  	background-position:100vw;
+    background-position:100vh;
+  }
+}
+.buttons-6 .btn4:hover{
+	background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+   animation:slidebg4 10s linear infinite;
+ }  
+ @keyframes slidebg4 {
+  to {
+  	background-position:-100vw;
+  }
+}
+.buttons-6 .btn3{
+	outline-offset: 0;
+	transition: .5s;
+}
+.buttons-6 .btn3:hover{
+	outline: 2px solid pink;
+	outline-offset: 5px;
+}
+
+/*..........buttons-7 css.......*/
+.buttons-7 a,.buttons-8 a{
+	color: gray;
+	padding: 10px 20px;
+	background: white;
+	border: none;
+}
+.buttons-7 .btn1{
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+	rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.buttons-7 .btn2{
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.buttons-7 .btn3{
+	box-shadow: rgba(50, 50, 93, 10%) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.buttons-7 .btn4{
+	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+/*..........buttons-7 css.......*/
+.buttons-8 .btn1{
+	box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, 
+	rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+.buttons-8 .btn2{
+	box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, 
+	rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px;
+}
+.buttons-8 .btn3{
+	box-shadow: rgba(0, 0, 0, 0.17) 0px 17px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px 0px 30px 0px inset,
+	 rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, 
+	 rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+	 rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.buttons-8 .btn4{
+	box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+ rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
